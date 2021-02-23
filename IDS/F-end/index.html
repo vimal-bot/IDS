@@ -1,0 +1,277 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link href="https://fonts.googleapis.com/css?family=Raleway:100,200,300,400,500,600,700,800,900&display=swap"
+        rel="stylesheet">
+
+    <title>Cyber Sphere</title>
+
+    <!--
+
+Breezed Template
+
+https://templatemo.com/tm-543-breezed
+
+-->
+    <!-- Additional CSS Files -->
+    <link rel="stylesheet" type="text/css" href={% static "assets/css/bootstrap.min.css" %}>
+
+    <link rel="stylesheet" type="text/css" href={% static "assets/css/font-awesome.css" %}>
+
+    <link rel="stylesheet" href={% static "assets/css/templatemo-breezed.css" %}>
+
+    <link rel="stylesheet" href={% static "assets/css/owl-carousel.css" %}>
+
+    <link rel="stylesheet" href={% static "assets/css/lightbox.css" %}>
+
+</head>
+
+<body>
+
+    <!-- ***** Preloader Start ***** -->
+    <div id="preloader">
+        <div class="jumper">
+            <div></div>
+            <div></div>
+            <div></div>
+        </div>
+    </div>
+    <!-- ***** Preloader End ***** -->
+
+
+    <!-- ***** Header Area Start ***** -->
+    <header class="header-area header-sticky">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <nav class="main-nav">
+                        <!-- ***** Logo Start ***** -->
+                        <a href="index.html" class="logo">
+                            INTRUSION DETECTION
+                        </a>
+                        <!-- ***** Logo End ***** -->
+                        <!-- ***** Menu Start ***** -->
+                        <ul class="nav">
+                            <li class="scroll-to-section"><a href="#top" class="active">Home</a></li>
+                            <li class="scroll-to-section"><a href="#about">About</a></li>
+                            {% if user.is_authenticated %}
+                            <li> <a>Hello {{user.first_name}}</a></li>
+                            <li><a href="/Signout">Signout </a></li>
+                            {% else %}
+                            <li class="nav-item">
+                                <a href="/Signin" class="nav-link-active">Sign in</a>
+                            </li>
+                            {% endif %}
+                        </ul>
+                        <a class='menu-trigger'>
+                            <span>Menu</span>
+                        </a>
+                        <!-- ***** Menu End ***** -->
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </header>
+    <!-- ***** Header Area End ***** -->
+
+    <!-- ***** Main Banner Area Start ***** -->
+    <div class="main-banner header-text" id="top">
+        <div class="Modern-Slider">
+            <!-- Item -->
+            <div class="item">
+                <div class="img-fill">
+                    <img src={% static "assets/images/img_1.png" %} alt="">
+                    <div class="text-content">
+                        <h3>Welcome To Cyber Sphere </h3>
+                        <h5>THE COMPLETE SOLUTION</h5>
+                        {% if user.is_authenticated %}
+                        <a href="Dashboard/" class="main-stroked-button">Dashboard</a>
+                        {% else %}   
+                        <a href="Signin/" class="main-stroked-button">Dashboard</a>
+                        {% endif %}
+                        <a href="#" class="main-filled-button">Learn More</a>
+                    </div>
+                </div>
+            </div>
+            <!-- // Item -->
+
+        </div>
+    </div>
+    <div class="scroll-down scroll-to-section"><a href="#about"><i class="fa fa-arrow-down"></i></a></div>
+    <!-- ***** Main Banner Area End ***** -->
+
+    <!-- ***** About Area Starts ***** -->
+    <section class="section" id="about">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6 col-md-6 col-xs-12">
+                    <div class="left-text-content">
+                        <div class="section-heading">
+                            <h6>About Us</h6>
+                            <h2>We work with top brands and startups</h2>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-6 col-sm-6">
+                                <div class="service-item">
+                                    <img src={% static "assets/images/service-item-01.png" %} alt="">
+                                    <h4>Top Notch</h4>
+                                </div>
+                            </div>
+                            <div class="col-md-6 col-sm-6">
+                                <div class="service-item">
+                                    <img src={% static "assets/images/service-item-01.png" %} alt="">
+                                    <h4>Robust</h4>
+                                </div>
+                            </div>
+                            <div class="col-md-6 col-sm-6">
+                                <div class="service-item">
+                                    <img src={% static "assets/images/contact-info-03.png" %} alt="">
+                                    <h4>Reliable</h4>
+                                </div>
+                            </div>
+                            <div class="col-md-6 col-sm-6">
+                                <div class="service-item">
+                                    <img src={% static "assets/images/contact-info-03.png" %} alt="">
+                                    <h4>Up-to-date</h4>
+                                </div>
+                            </div>
+                            {% if user.is_authenticated %}
+                            <div class="col-md-12">
+                               
+                                <a href="Dashboard/" class="main-button-icon">
+                                    Learn More <i class="fa fa-arrow-right"></i>
+                                </a>
+                            </div>
+                            {% else %}   
+                            <div class="col-md-12">
+                               
+                                <a href="Signin/" class="main-button-icon">
+                                    Learn More <i class="fa fa-arrow-right"></i>
+                                </a>
+                            </div> 
+                            {% endif %}
+
+                            
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6 col-md-6 col-xs-12">
+                    <div class="right-text-content">
+                        <p>Cyber Space is a free to use Intrusion Detection and Recommendation system , It helps small and medium sized buissnes to cope up to their Security needs.<br>
+                        
+                           We use Random Forest Classifier in order to detect the type of attacks, and we display results and recommended steps as well. History Page lets you analyze the previous detections and help you make your system secure and friendly
+                           <br><br>
+
+                           Input file has to be in .csv format and should have the required fields in order to detect correctly. The Data should contain several fields which are imported from the server side as well so make sure you integrate and supply us with that data as well!!
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- ***** About Area Ends ***** -->
+
+    <!-- ***** Features Big Item Start ***** -->
+    <section class="section" id="features">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-4 col-md-6 col-sm-12 col-xs-12"
+                    data-scroll-reveal="enter left move 30px over 0.6s after 0.4s">
+                    <div class="features-item">
+                        <div class="features-icon">
+                            <img src={% static "assets/images/features-icon-1.png" %} alt="">
+                        </div>
+                        <div class="features-content">
+                            <h4>Initial Work</h4>
+                            <p>Developed for the Medium and small buisnesses and want a complete solution for their enterprises.</p>
+                            <a href="#" class="text-button-icon">
+                                Learn More <i class="fa fa-arrow-right"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 col-sm-12 col-xs-12"
+                    data-scroll-reveal="enter bottom move 30px over 0.6s after 0.4s">
+                    <div class="features-item">
+                        <div class="features-icon">
+                            <img src={% static "assets/images/features-icon-1.png" %} alt="">
+                        </div>
+                        <div class="features-content">
+                            <h4>Master Planning</h4>
+                            <p>We choosed from different algorithms, so that we give the highest accuracy to our customers.</p>
+                            <a href="#" class="text-button-icon">
+                                Learn More <i class="fa fa-arrow-right"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 col-sm-12 col-xs-12"
+                    data-scroll-reveal="enter right move 30px over 0.6s after 0.4s">
+                    <div class="features-item">
+                        <div class="features-icon">
+                            <img src={% static "assets/images/features-icon-1.png" %} alt="">
+                        </div>
+                        <div class="features-content">
+                            <h4>Smooth Execution</h4>
+                            <p>GUI highly furnished to run smoothly and to give our users a complete idea of our complex system.</p>
+                            <a href="#" class="text-button-icon">
+                                Learn More <i class="fa fa-arrow-right"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- ***** Features Big Item End ***** -->
+
+
+
+    <!-- jQuery -->
+    <script src={% static "assets/js/jquery-2.1.0.min.js" %}></script>
+
+    <!-- Bootstrap -->
+    <script src={% static "assets/js/popper.js" %}></script>
+    <script src={% static "assets/js/bootstrap.min.js" %}></script>
+
+    <!-- Plugins -->
+    <script src={% static "assets/js/owl-carousel.js" %}></script>
+    <script src={% static "assets/js/scrollreveal.min.js" %}></script>
+    <script src={% static "assets/js/waypoints.min.js" %}></script>
+    <script src={% static "assets/js/jquery.counterup.min.js" %}></script>
+    <script src={% static "assets/js/imgfix.min.js" %}></script>
+    <script src={% static "assets/js/slick.js" %}></script>
+    <script src={% static "assets/js/lightbox.js" %}></script>
+    <script src={% static "assets/js/isotope.js" %}></script>
+
+    <!-- Global Init -->
+    <script src={% static "assets/js/custom.js" %}></script>
+
+    <script>
+
+        $(function () {
+            var selectedClass = "";
+            $("p").click(function () {
+                selectedClass = $(this).attr("data-rel");
+                $("#portfolio").fadeTo(50, 0.1);
+                $("#portfolio div").not("." + selectedClass).fadeOut();
+                setTimeout(function () {
+                    $("." + selectedClass).fadeIn();
+                    $("#portfolio").fadeTo(50, 1);
+                }, 500);
+
+            });
+        });
+
+    </script>
+
+</body>
+
+</html>
