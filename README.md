@@ -1,14 +1,14 @@
-#### CYBER-SPHERE
+####   CYBER-SPHERE
 
 # An Intrusion Detection System based on Random Forest Classifier
 ## OVERVIEW
 A Website based Intrusion Destection System(IDS) aimed towards reducing cost of IDS for small to mid-sized businesses. An easily accessible and reliable tool which provides solutions to all the security needs. It works on the ML trained model and classifies data uploaded by the client into different categories, such as 'normal data', 'attack scenario'. It further gives subclassifications to attacks and provides relevant information and recommendations to deal with the problem.
 
-## TECHNOLOGIES USED
-  ->Language : Python
-  ->Back-end : Django
-  ->Front-end : HTML/CSS/Java Script , Bootstrap
-## ARCHITECTURE
+# TECHNOLOGIES USED
+    Language : Python
+    Back-end : Django
+    Front-end : HTML/CSS/Java Script , Bootstrap
+# ARCHITECTURE
 The Use-Cases of my Project are:
 
 # 1.LOGIN
@@ -47,7 +47,7 @@ The Use-Cases of my Project are:
 ![Architecture](https://user-images.githubusercontent.com/69494580/108812803-c2b41e00-75d5-11eb-9c46-228306675190.PNG)
 
 
-PROTOTYPE
+## PROTOTYPE
 ![index](https://user-images.githubusercontent.com/69494580/108813531-34d93280-75d7-11eb-9da0-06aa7d48ab65.PNG)
 ![report1](https://user-images.githubusercontent.com/69494580/108813540-399de680-75d7-11eb-81a5-43590850656e.PNG)
 ![report2](https://user-images.githubusercontent.com/69494580/108813542-3a367d00-75d7-11eb-98c1-a96513f37cea.PNG)
@@ -57,5 +57,5 @@ PROTOTYPE
 
 
 
-REPORT
+# REPORT
 The Complete report is uploaded and can be viwed from above.
