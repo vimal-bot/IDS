@@ -1,3 +1,13 @@
+## ARCHIECTURE DIAGRAM
+![Architecture](https://user-images.githubusercontent.com/69494580/108812803-c2b41e00-75d5-11eb-9c46-228306675190.PNG)
+
+
+
+## PROTOTYPE
+
+![index](https://user-images.githubusercontent.com/69494580/108813531-34d93280-75d7-11eb-9da0-06aa7d48ab65.PNG)
+![report1](https://user-images.githubusercontent.com/69494580/108813540-399de680-75d7-11eb-81a5-43590850656e.PNG)
+![report2](https://user-images.githubusercontent.com/69494580/108813542-3a367d00-75d7-11eb-98c1-a96513f37cea.PNG)
 # CYBER-SPHERE
 
 ### An Intrusion Detection System based on Random Forest Classifier
@@ -43,19 +53,6 @@ The Use-Cases of my Project are:
     i.If 'Save Changes' is opted history gets saved in 'History' Database.
     ii.When client want to see his/her history the history corresponding to thier username is displayed.
     iii.This is achieved using username as Foriegn Key between 'User' and 'History' Database.
-## ARCHIECTURE DIAGRAM
-![Architecture](https://user-images.githubusercontent.com/69494580/108812803-c2b41e00-75d5-11eb-9c46-228306675190.PNG)
-
-
-## PROTOTYPE
-![index](https://user-images.githubusercontent.com/69494580/108813531-34d93280-75d7-11eb-9da0-06aa7d48ab65.PNG)
-![report1](https://user-images.githubusercontent.com/69494580/108813540-399de680-75d7-11eb-81a5-43590850656e.PNG)
-![report2](https://user-images.githubusercontent.com/69494580/108813542-3a367d00-75d7-11eb-98c1-a96513f37cea.PNG)
-
-
-
-
-
-
+    
 # REPORT
 The Complete report is uploaded and can be viwed from above.
